@@ -10,7 +10,7 @@ public class Main {
 
     private static void hundredDoors(){
         String[] doors = new String[101];
-        //Alternatily do with booleans
+        //Alternatively do with booleans
         for (int i = 1; i < doors.length; i++) {
             doors[i] = "closed";
         }
@@ -26,16 +26,12 @@ public class Main {
                 }
             }
         }
-
         System.out.print(Arrays.toString(doors) + "\n");
         System.out.print("The opened doors are: \n");
-
-        for (int i = 0; i < doors.length; i++) {
+        for (int i = 1; i < doors.length; i++) {
             if (doors[i].equals("open")){
                 System.out.print(i + " ");
             }
         }
     }
-
-
 }
